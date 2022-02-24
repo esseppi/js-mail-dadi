@@ -5,9 +5,8 @@ let div = document.createElement('div');
 let button = document.querySelector('button');
 
 
-
 button.addEventListener('click', function() {
-    let loginAcc = email.value;
+    let loginAcc = email.value.toLowerCase();
     console.log(loginAcc)
     for (let i = 0; i < accounts.length; i++) {
         const element = accounts[i].toLowerCase();
@@ -20,5 +19,7 @@ button.addEventListener('click', function() {
             div.innerHTML =  "SEI GIA' REGISTRATO!"
         }   
     }
-
 });
+
+
+
