@@ -5,23 +5,21 @@ let div = document.createElement('div');
 main.append(div)
 let button = document.querySelector('.mailbut');
 
-let check = false;
-
 button.addEventListener('click', function() {
+    let check = false;
     let loginAcc = email.value.toLowerCase();
     console.log(loginAcc)
     for (let i = 0; i < accounts.length; i++) {
         const element = accounts[i].toLowerCase();
         if (element == loginAcc) {
-            check = true
+            check = true;
         } 
     }
-if (check = true) {
-    div.append('entra')
-    
-} else {
-    div.append('esci')
-}
+    if (check = true) {
+        div.append('entra');  
+    } else {
+        div.append('esci');
+    }
 });
 
 
