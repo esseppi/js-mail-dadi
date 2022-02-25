@@ -9,18 +9,16 @@ let button = document.querySelector('.mailbut');
 
 button.addEventListener('click', function() {
     let loginAcc = email.value.toLowerCase();
-    
     console.log(loginAcc)
     for (let i = 0; i < accounts.length; i++) {
         const element = accounts[i].toLowerCase();
         if (loginAcc !== element) {
-          div.innerHTML = "Non sei un utente registrato!";
+            div.innerHTML = "Non sei un utente registrato!";
         } else {
             div.innerHTML =  "SEI GIA' REGISTRATO!";  
         }   
     }
 });
-
 
 
 
